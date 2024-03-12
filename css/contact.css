@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@font-face {
+  font-family: "Matter";
+  src: url("./Font/Matter-Regular.ttf");
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Matter", sans-serif;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+  cursor: none;
+}
+::-webkit-scrollbar {
+  width: 1vw;
+}
+.custom-cursor {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+#contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 1px solid#484848;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+}
+.whatwedo-head {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  font-family: "Syne", sans-serif;
+}
+
+.whatwedo-desc {
+  font-size: 32px;
+  line-height: 38px;
+  width: 380px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  width: 425px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  font-family: "Syne", sans-serif;
+}
+/* NAV STARTS */
+input {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid#747474;
+  padding: 10px;
+  width: 45%;
+  font-size: 14px;
+  font-family: "Matter", sans-serif;
+  color: #000 !important;
+}
+.form-group {
+  display: flex;
+  gap: 20px;
+  margin: 1.2em 0 !important;
+}
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid#747474;
+  padding: 10px;
+  width: 85%;
+  font-size: 16px;
+  font-family: "Matter", sans-serif;
+  color: #000;
+}
+
+#contact a {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Syne", sans-serif;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  background: #000;
+}
+
+nav {
+  margin: 0 auto;
+  height: 75px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  margin: 0 25px;
+}
+nav .nav-link {
+  font-size: 14px;
+  margin: 0 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Syne", sans-serif;
+  color: #000 !important;
+}
+
+.navbar-brand {
+  width: 200px;
+  margin: 0 25px;
+}
+/* NAVBAR ENDS */
+/* FOOTER STARTS */
+/* CALL TO ACTION */
+#call-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
+  background-color: #000;
+  color: #fff;
+}
+
+#call-action h2 {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  width: 420px;
+  color: #fff;
+}
+#call-action a {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Syne", sans-serif;
+  width: 120px;
+  height: 40px;
+}
+
+/* /* CALL TO ENDS */
+
+/* FOOTER STARTS */
+footer {
+  margin-bottom: 0;
+  padding: 0;
+  height: 50vh;
+}
+footer .nav-link {
+  text-decoration: none;
+  color: #fff;
+  width: 350px;
+  font-size: 16px;
+  line-height: 19.6px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+.footer-desc {
+  width: 275px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+footer h5 {
+  font-size: 14px;
+  line-height: 28.6px;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+}
+.contact-head {
+  font-size: 14px;
+  line-height: 18.6px;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+}
+.text-body-secondary {
+  font-size: 16px;
+  line-height: 19.6px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+.text-body-dark {
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+/* FOOTER ENDS */
