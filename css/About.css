@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@font-face {
+  font-family: "Matter";
+  src: url("./Font/Matter-Regular.ttf");
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Matter", sans-serif;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+  cursor: none;
+}
+::-webkit-scrollbar {
+  width: 1vw;
+}
+.custom-cursor {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+/* NAV STARTS */
+
+nav {
+  margin: 0 auto;
+  height: 75px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  margin: 0 25px;
+}
+nav .nav-link {
+  font-size: 14px;
+  margin: 0 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Syne", sans-serif;
+  color: #000 !important;
+}
+
+.navbar-brand {
+  width: 200px;
+  margin: 0 25px;
+}
+/* NAVBAR ENDS */
+/* ABOUT STARTS */
+/* WEBDIGITAL STARTS */
+
+.about-head {
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
+  font-family: "Syne", sans-serif;
+}
+
+.about-desc {
+  width: 475px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  width: 450px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+/* ABOUT ENDS */
+/* INTRO STARTS */
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 875px;
+  /* height: 130vh; */
+}
+.intro-desc {
+  font-size: 28px;
+  line-height: 38px;
+
+  font-weight: 400;
+  text-align: center;
+  font-family: "Matter", sans-serif;
+}
+/* INTRO ENDS */
+/* Custom styles for equal spacing and font size */
+.card {
+  margin-bottom: 20px;
+  height: 265px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  line-height: 45px;
+  width: 320px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+
+#service {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 25px;
+}
+.border-left,
+.border-right {
+  border: 0.3px solid#484848;
+  border-top: none;
+  border-bottom: none;
+}
+.service-desc {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+
+#about a,
+#service a,
+#blog .ms-auto {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Syne", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+#about a::after,
+#service a::after,
+#blog .ms-auto::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0; /* Initial width set to 0 */
+  height: 3px; /* Adjust the height of the border as needed */
+  background-color: #da7629; /* Blue color for the border */
+  transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+#about a:hover::after,
+#service a:hover::after,
+#blog .ms-auto:hover::after {
+  width: 100%; /* Expand the width on hover */
+}
+
+#service h2 {
+  font-size: 32px;
+  line-height: 38px;
+  width: 320px;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+  color: #fff;
+}
+.service-head {
+  font-size: 18px;
+  line-height: 45px;
+  width: 320px;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+}
+#service a {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Syne", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#service p {
+  text-align: justify;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  color: #fff;
+  width: 100%;
+}
+
+.left-column {
+  flex: 0 0 40%;
+  max-width: 45%;
+}
+.left-column p {
+  max-width: 420px;
+  text-align: justify;
+}
+.right-column {
+  flex: 0 0 60%;
+  max-width: 40%;
+  overflow-y: auto;
+  height: auto; /* Set a fixed height for scrolling */
+}
+hr {
+  border: 0.3px solid #484848;
+}
+/* SERVICE ENDS */
+
+/* CALL TO ACTION STARTS */
+
+#call-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
+  background-color: #000;
+  color: #fff;
+}
+
+#call-action h2 {
+  font-size: 38px;
+  line-height: 45px;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+#call-action a {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Syne", sans-serif;
+  width: 120px;
+  height: 40px;
+}
+/* CALL TO ACTION ENDS */
+
+/* FAQ */
+
+.accordion {
+  width: 85%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 0 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-family: "Matter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+/* FOOTER STARTS */
+footer {
+  margin-bottom: 0;
+  padding: 0;
+  height: 50vh;
+}
+footer .nav-link {
+  text-decoration: none;
+  color: #fff;
+  width: 350px;
+  font-size: 16px;
+  line-height: 19.6px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+.footer-desc {
+  width: 275px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+footer h5 {
+  font-size: 14px;
+  line-height: 28.6px;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+}
+.contact-head {
+  font-size: 14px;
+  line-height: 18.6px;
+  letter-spacing: -0.2px;
+  font-family: "Syne", sans-serif;
+}
+.text-body-secondary {
+  font-size: 16px;
+  line-height: 19.6px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+.text-body-dark {
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.2px;
+  font-family: "Matter", sans-serif;
+}
+/* FOOTER ENDS */
